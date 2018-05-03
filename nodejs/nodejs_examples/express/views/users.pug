@@ -1,0 +1,18 @@
+head
+    title= title
+    link(href= '/css/style.css', 
+        rel='stylesheet', 
+        type='text/css')
+body
+    table
+        tr
+            th ID
+            th Username
+            th Profession
+            th More Info
+        each user, index in users
+            tr 
+                td #{user.id}
+                td #{user.name}
+                td #{user.profession}
+                td: a.info(href='/get/' + user.id) &#9432;

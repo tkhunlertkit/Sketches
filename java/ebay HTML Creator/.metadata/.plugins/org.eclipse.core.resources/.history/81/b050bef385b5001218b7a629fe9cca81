@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Untitled Document</title>
+	<script type="text/javascript">
+		function init() {
+			reSize();
+			setPara();
+		}
+		function reSize() {
+			var img = document.getElementById('back');
+			img.style.position = 'absolute';
+			img.style.width = '760px';
+			img.style.height = 'auto';
+			img.style.zIndex = '-1';
+		}
+		function setPara() {
+			var t = document.getElementById('context');
+			t.style.marginTop = '160px';
+			t.style.width=532+'px';
+			t.style.marginLeft = 114 + 'px';
+			t = t.getElementsByClassName('title');
+			for (var i = 0; i < t.length; i++) {
+				var tt = t[i];
+				tt.style.textAlign = 'center';
+				tt.style.textShadow = '0 0 2em yellow, 0 0 2em yellow';
+				tt.style.color='#E4287C';
+				tt.style.fontSize='18px';
+			}
+			t = document.getElementById('context').getElementsByClassName('info');
+			for (var i=0; i<t.length; i++) {
+				var tt = t[i];
+				tt.style.color= '#157DEC';
+			}
+			t = document.getElementById('thx');
+			t.style.textAlign = 'center';
+			t.style.marginTop = '20px';
+			t.style.marginBottom='230px';
+			t.style.textShadow = '0 0 2em black, 0 0 2em black';
+			t.style.color = '#595454';
+			t.style.fontSize = '18px';
+		}
+	</script>
+</head>
+<body id="main" onload="init()">
+	<table style="height:300px;">
+		<tr><td></td></tr>
+		<tr> <td>
+			<div>
+				<img id="back" src="http://i1348.photobucket.com/albums/p731/tkhunlertkit/E010E230E2D0E1A0E230E390E1B0_zpsf71ad1a0.png" alt="border" />
+			</div>
+			<div id="context">
+				<p class="title"><strong>asdsad</strong></p>
+				<p class="title"><strong>asdasdsadasdsa</strong></p>
+				<p class="title"><strong>dasdsadasd</strong></p>

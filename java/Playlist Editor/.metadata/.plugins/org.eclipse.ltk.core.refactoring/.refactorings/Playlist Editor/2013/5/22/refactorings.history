@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;test&apos; in &apos;Process.writeText(...)&apos; to &apos;name&apos;&#x0A;- Original project: &apos;Playlist Editor&apos;&#x0A;- Original element: &apos;Process.writeText(File, String[]).test&apos;&#x0A;- Renamed element: &apos;test&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;test&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Process.java[Process~writeText~QFile;~\[QString;@test!1247!1272!1254!1257!QString;!0!false" name="name" references="true" stamp="1369633920556" version="1.0"/>
+</session>

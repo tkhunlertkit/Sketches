@@ -1,0 +1,11 @@
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/bin/Debug/netcoreapp2.0/MCVMovie.deps.json
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/bin/Debug/netcoreapp2.0/MCVMovie.runtimeconfig.json
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/bin/Debug/netcoreapp2.0/MCVMovie.runtimeconfig.dev.json
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/bin/Debug/netcoreapp2.0/MCVMovie.dll
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/bin/Debug/netcoreapp2.0/MCVMovie.pdb
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/obj/Debug/netcoreapp2.0/MCVMovie.csprojResolveAssemblyReference.cache
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/obj/Debug/netcoreapp2.0/MCVMovie.csproj.CoreCompileInputs.cache
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/obj/Debug/netcoreapp2.0/MCVMovie.AssemblyInfoInputs.cache
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/obj/Debug/netcoreapp2.0/MCVMovie.AssemblyInfo.cs
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/obj/Debug/netcoreapp2.0/MCVMovie.dll
+/Users/tkhunlertkit/Work/Sketches/C#/MCVMovie/MCVMovie/obj/Debug/netcoreapp2.0/MCVMovie.pdb

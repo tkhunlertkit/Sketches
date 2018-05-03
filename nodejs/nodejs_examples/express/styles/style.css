@@ -1,0 +1,30 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    background-color: #E5F5FF;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.info {
+    text-decoration: none;
+    color: black;
+}

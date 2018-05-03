@@ -1,0 +1,85 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.10.0 (devel)" "(s20121218-87-g03ebd2f)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x10cd01900 .scope module, "test" "test" 2 1;
+ .timescale 0 0;
+P_0x10cd01a68 .param/l "WIDTH" 0 2 3, +C4<01010>;
+v0x10cd18790_0 .var "clk", 0 0;
+v0x10cd18830_0 .var "reset", 0 0;
+v0x10cd188e0_0 .net "value", 9 0, v0x10cd185e0_0;  1 drivers
+S_0x10cd03f00 .scope module, "c1" "counter" 2 23, 3 1 0, S_0x10cd01900;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 10 "out"
+    .port_info 1 /INPUT 1 "clk"
+    .port_info 2 /INPUT 1 "rst"
+P_0x10cd01b78 .param/l "WIDTH" 0 3 3, +C4<01010>;
+v0x10cd040f0_0 .net "clk", 0 0, v0x10cd18790_0;  1 drivers
+v0x10cd185e0_0 .var "out", 9 0;
+v0x10cd18690_0 .net "rst", 0 0, v0x10cd18830_0;  1 drivers
+E_0x10cd044e0 .event posedge, v0x10cd18690_0, v0x10cd040f0_0;
+    .scope S_0x10cd03f00;
+T_0 ;
+    %wait E_0x10cd044e0;
+    %load/v 8, v0x10cd18690_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %ix/load 0, 10, 0;
+    %assign/v0 v0x10cd185e0_0, 0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %ix/load 0, 1, 0;
+    %load/vp0 8, v0x10cd185e0_0, 10;
+    %ix/load 0, 10, 0;
+    %assign/v0 v0x10cd185e0_0, 0, 8;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x10cd01900;
+T_1 ;
+    %set/v v0x10cd18830_0, 0, 1;
+    %end;
+    .thread T_1;
+    .scope S_0x10cd01900;
+T_2 ;
+    %vpi_call 2 9 "$dumpfile", "test.vcd" {0 0};
+    %vpi_call 2 10 "$dumpvars", 1'sb0, S_0x10cd01900 {0 0};
+    %delay 17, 0;
+    %set/v v0x10cd18830_0, 1, 1;
+    %delay 11, 0;
+    %set/v v0x10cd18830_0, 0, 1;
+    %delay 29, 0;
+    %set/v v0x10cd18830_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0x10cd18830_0, 0, 1;
+    %delay 2000, 0;
+    %vpi_call 2 16 "$finish" {0 0};
+    %end;
+    .thread T_2;
+    .scope S_0x10cd01900;
+T_3 ;
+    %set/v v0x10cd18790_0, 0, 1;
+    %end;
+    .thread T_3;
+    .scope S_0x10cd01900;
+T_4 ;
+    %delay 1, 0;
+    %load/v 8, v0x10cd18790_0, 1;
+    %inv 8, 1;
+    %set/v v0x10cd18790_0, 8, 1;
+    %jmp T_4;
+    .thread T_4;
+    .scope S_0x10cd01900;
+T_5 ;
+    %vpi_call 2 26 "$monitor", "At time %t, value = %h (%0d)", $time, v0x10cd188e0_0, v0x10cd188e0_0 {0 0};
+    %end;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "test.v";
+    "counter.v";

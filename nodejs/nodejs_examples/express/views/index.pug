@@ -1,0 +1,24 @@
+doctype html
+
+head
+    title= title
+
+mixin formInput(label, type, name)
+    . 
+        #{label}: 
+    input(type=type, name=name)
+    br
+
+h1 Add User
+form(action = '/addUser', method = 'POST')
+    +formInput('Username',   'text', 'name')
+    +formInput('Password',   'text', 'password')
+    +formInput('Profession', 'text', 'profession')
+    input(type='submit', value='Submit')
+
+h1 Delete User
+form(action='/deleteUser', method='POST')
+    +formInput('id', 'text', 'id')
+    input(type='submit', value='Submit')
+
+h2: a(href='/listUsers')= 'See all users'

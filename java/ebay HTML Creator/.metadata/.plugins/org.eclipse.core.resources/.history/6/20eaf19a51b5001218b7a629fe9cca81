@@ -1,0 +1,216 @@
+public class ConstructString {
+
+	private String text = "";
+	private String _product = "";
+	private String _shipping = initShipping();
+	private String _payment = initPayment();
+	private final String _start = writeStart();
+	private final String _end = writeEnd();
+
+	public ConstructString() {
+
+	}
+
+	private String initPayment() {
+		String Payment = "\t\t\t\t<p class=\"title\"><strong>Payment</strong></p>\n";
+		Payment += "\t\t\t\t<ul class = \"info\">\n";
+		Payment += "\t\t\t\t\t<li>We accept PayPal only.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>The payment should be made within 3 days after auction ends. Please contact us if payment will be late for any reason.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>If you buy more than one item, please hold on until all bids you will win end, then pay for them together.<strong></strong></li>\n";
+		Payment += "\t\t\t\t</ul>\n";
+		Payment += "\t\t\t\t<p class=\"title\"><strong>Feedback</strong></p>\n";
+		Payment += "\t\t\t\t<ul class=\"info\">\n";
+		Payment += "\t\t\t\t\t<li>Feedback is a very important part of ebay. We will leave positive feedback for each customer. We are looking forward to your positive feedback after you received the item.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>We will leave feedback in return when we receive it. This assures us that your shipment has arrived at its destination.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>If there are any problems, please email us before posting feedback so we may try to resolve the issue first.<strong></strong></li>\n";
+		Payment += "\t\t\t\t</ul>\n";
+		return Payment;
+	}
+
+	private String initShipping() {
+		String Shipping = "\t\t\t\t<p class=\"title\"><strong>Shipping</strong></p>\n";
+		Shipping += "\t\t\t\t<ul class=\"info\">\n";
+		Shipping += "\t\t\t\t\t<li>All items will be shipped within 3 business days after payment has been received. <strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>The package will be shipped from Thailand via standard airmail.<strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>The delivery time is estimate 3-5 weeks international shipping. <strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>No return accepted.<strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>If you are OK with this please go ahead and purchase and please do not leave us low star rating feedback on the shipping time and shipping cost categories as we have no control over the price and delivery time.</li>\n";
+		Shipping += "\t\t\t\t\t<li>Thank you for your understanding we are sure you will love the product.<strong></strong></li>\n";
+		Shipping += "\t\t\t\t</ul>\n";
+		return Shipping;
+	}
+
+	private String writeStart() {
+		String start = "";
+		start = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n";
+		start += "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n";
+		start += "<head>\n";
+		start += "\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
+		start += "\t<title>Untitled Document</title>\n";
+		start += "\t<script type=\"text/javascript\">\n";
+		start += "\t\tfunction init() {\n";
+		start += "\t\t\treSize();\n";
+		start += "\t\t\tsetPara();\n";
+		start += "\t\t}\n";
+		start += "\t\tfunction reSize() {\n";
+		start += "\t\t\tvar img = document.getElementById('back');\n";
+		start += "\t\t\timg.style.position = 'absolute';\n";
+		start += "\t\t\timg.style.width = '760px';\n";
+		start += "\t\t\timg.style.height = 'auto';\n";
+		start += "\t\t\timg.style.zIndex = '-1';\n";
+		start += "\t\t}\n";
+		start += "\t\tfunction setPara() {\n";
+		start += "\t\t\tvar t = document.getElementById('context');\n";
+		start += "\t\t\tt.style.marginTop = '160px';\n";
+		start += "\t\t\tt.style.width=532+'px';\n";
+		start += "\t\t\tt.style.marginLeft = 114 + 'px';\n";
+		start += "\t\t\tt = t.getElementsByClassName('title');\n";
+		start += "\t\t\tfor (var i = 0; i < t.length; i++) {\n";
+		start += "\t\t\t\tvar tt = t[i];\n";
+		start += "\t\t\t\ttt.style.textAlign = 'center';\n";
+		start += "\t\t\t\ttt.style.textShadow = '0 0 2em yellow, 0 0 2em yellow';\n";
+		start += "\t\t\t\ttt.style.color='#E4287C';\n";
+		start += "\t\t\t\ttt.style.fontSize='18px';\n";
+		start += "\t\t\t}\n";
+		start += "\t\t\tt = document.getElementById('context').getElementsByClassName('info');\n";
+		start += "\t\t\tfor (var i=0; i<t.length; i++) {\n";
+		start += "\t\t\t\tvar tt = t[i];\n";
+		start += "\t\t\t\ttt.style.color= '#157DEC';\n";
+		start += "\t\t\t}\n";
+		start += "\t\t\tt = document.getElementById('thx');\n";
+		start += "\t\t\tt.style.textAlign = 'center';\n";
+		start += "\t\t\tt.style.marginTop = '20px';\n";
+		start += "\t\t\tt.style.marginBottom='230px';\n";
+		start += "\t\t\tt.style.textShadow = '0 0 2em black, 0 0 2em black';\n";
+		start += "\t\t\tt.style.color = '#595454';\n";
+		start += "\t\t\tt.style.fontSize = '18px';\n";
+		start += "\t\t}\n";
+		start += "\t</script>\n";
+		start += "</head>\n";
+		start += "<body id=\"main\" onload=\"init()\">\n";
+		start += "\t<table style=\"height:300px;\">\n";
+		start += "\t\t<tr><td></td></tr>\n";
+		start += "\t\t<tr> <td>\n";
+		start += "\t\t\t<div>\n";
+		start += "\t\t\t\t<img id=\"back\" src=\"http://i1348.photobucket.com/albums/p731/tkhunlertkit/E010E230E2D0E1A0E230E390E1B0_zpsf71ad1a0.png\" alt=\"border\" />\n";
+		start += "\t\t\t</div>\n";
+		start += "\t\t\t<div id=\"context\">\n";
+		return start;
+	}
+
+	private String writeEnd() {
+		String end = "";
+		end += "\t\t\t\t<p id=\"thx\"><strong>Thank you for your interest and have a great day.</strong></p>\n";
+		end += "\t\t\t</div>\n";
+		end += "\t\t</td> </tr>\n";
+		end += "\t</table>\n";
+		end += "</body>\n";
+		end += "</html>\n";
+		return end;
+	}
+
+	private String addTitle(String s) {
+		String toAdd = "\t\t\t\t<p class=\"title\"><strong>";
+		toAdd += s;
+		toAdd += "</strong></p>\n";
+		return toAdd;
+
+	}
+
+	private String addPoint(String s) {
+		String toAdd = "\t\t\t\t\t<li>";
+		toAdd += s;
+		toAdd += "</li>\n";
+		return toAdd;
+	}
+
+	public String genHTMLCode(String s) {
+		String txt = "";
+		String[] line = s.split("\n");
+		boolean ul = false;
+		for (int i = 0; i < line.length; ++i) {
+			String[] elements = line[i].split("\t");
+			for (int j = 0; j < elements.length; ++j) {
+				System.out.print("1" + elements[j] + "   ");
+			}
+			System.out.println();
+			
+			// bullet point {
+			if (elements[0].isEmpty()) {
+				// bullet with tab indentation
+				if (!ul) {
+					txt += "\t\t\t\t<ul class=\"info\">\n";
+					ul = true;
+				}
+				String n = "";
+				for (int j = 1; j < elements.length; ++j) {
+					n += elements[j] + " ";
+				}
+				n = n.substring(0, n.length() - 1);
+				txt += addPoint(n);
+			}
+			else if (elements[0].charAt(0) == '\u2022') {
+				// bullet with bullet
+				if (!ul) {
+					txt += "\t\t\t\t<ul class=\"info\">\n";
+					ul = true;
+				}
+				String n = "";
+				for (int j = 1; j < elements.length; ++j) {
+					n += elements[j] + " ";
+				}
+				n = n.substring(0, n.length() - 1);
+				txt += addPoint(n);
+			}
+			// Title
+			else {
+				if (ul) {
+					txt += "\t\t\t\t</ul>\n";
+					ul = false;
+				}
+				txt += addTitle(elements[0]);
+			}
+		}
+		if (ul) {
+			txt += "\t\t\t\t</ul>\n";
+			ul = false;
+		}
+		txt = replaceDQuote(txt);
+		return txt;
+	}
+
+	private String replaceDQuote(String s) {
+		char[] dq = { '\u201d', '\u201c', '\u201c', '\u0022', '\u275d',
+				'\u275e', '\u201e', '\u201f' };
+
+		for (int i = 0; i < dq.length; ++i) {
+			int loc = s.indexOf(dq[i]);
+			while (loc != -1) {
+				s = s.substring(0, loc) + "\"" + s.substring(loc + 1);
+				loc = s.indexOf(dq[i], loc + 1);
+			}
+		}
+		return s;
+	}
+
+	public String getAdded() {
+		return _product + _shipping + _payment;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public String append(String product, String shipping, String payment) {
+		_product = genHTMLCode(product);
+		_shipping = genHTMLCode(shipping);
+		_payment = genHTMLCode(payment);
+		text = _start;
+		text += _product;
+		text += _shipping;
+		text += _payment;
+		text += _end;
+		return text;
+	}
+
+}

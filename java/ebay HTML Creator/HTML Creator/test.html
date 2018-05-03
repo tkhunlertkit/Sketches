@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Untitled Document</title>
+	<script>
+		function picture(pic) {
+			var p = document.getElementById(pic);
+			if (p.offsetHeight > p.offsetWidth) {
+				p.style.height = "550px";
+				p.style.width = "auto";
+			}
+			else {
+				p.style.width = "500px";
+				p.style.height = "auto";
+			}
+		}
+		function correctDim() {
+			var d = document.getElementById('bb');
+			var y = Math.ceil(d.offsetHeight/177);
+			d.style.height = y*177 + 'px';
+		}
+	</script>
+	<style>
+		div.head {
+			background-image: url('http://i1348.photobucket.com/albums/p731/tkhunlertkit/Frame/Framehead_zpsdf4213ff.png');
+			background-position: center top;
+			height: 275px;
+			background-repeat: no-repeat;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: 0;
+			border-spacing: 0;
+			border-collapse: collapse;
+			border: 1px solid transparent;
+		}
+		div.body {
+			background-image: url('http://i1348.photobucket.com/albums/p731/tkhunlertkit/Frame/FrameBody_zps22f3a1f8.png');
+			background-position: center top;
+			background-repeat: repeat-y;
+			position: relative;
+			border-spacing: 0;
+			border-collapse: collapse;
+			margin-top: -1px;
+			padding-top: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border: 1px solid transparent;
+		}
+		div.end {
+			background-image: url('http://i1348.photobucket.com/albums/p731/tkhunlertkit/Frame/Framebottom_zpsd3c85ae1.png');
+			background-position: center top;
+			background-repeat: no-repeat;
+			height: 280px;
+			border: 1px solid transparent;
+			border-spacing: 0;
+			border-collapse: collapse;
+			margin-top: -1px;
+			padding-top: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		#context {
+			margin-top: -75px;
+			width: 620px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p.title {
+			text-align: center;
+			text-shadow: 0 0 2em yellow, 0 0 2em yellow;
+			color: #E4287C;
+			font-size: 18px;
+		}
+		.info {
+			color: #157DEC;
+		}
+		#thx {
+			text-align: center;
+			margin-top: 30px;
+			text-shadow: 0 0 2em black, 0 0 2em black;
+			color: #595454;
+			font-size: 18px;
+			margin-bottom: 400px;
+		}
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body  onload="correctDim()">
+	<div class="head"></div>
+	<div id="bb" class="body">
+	<div id="context">
+		<p class="title"><strong>Picture</strong></p>
+		<img id="pic0" src="http://i1348.photobucket.com/albums/p731/tkhunlertkit/Peacock/Pys2Y_zps504bf57f.jpeg" alt="0" onload="picture('pic0')" />
+		<img id="pic1" src="http://i1348.photobucket.com/albums/p731/tkhunlertkit/Peacock/0eo7n_zps24a952e1.jpeg" alt="1" onload="picture('pic1')" />
+		<img id="pic2" src="http://i1348.photobucket.com/albums/p731/tkhunlertkit/Peacock/2aVZw_zps701f8c64.jpeg" alt="2" onload="picture('pic2')" />
+		<img id="pic3" src="http://i1348.photobucket.com/albums/p731/tkhunlertkit/Peacock/VfiVs_zps7485b5a0.jpeg" alt="3" onload="picture('pic3')" />
+		<p class="title"><strong>Product detail </strong></p>
+		<ul class="info">
+			<li>Condition: New</li>
+			<li>Material: White clay</li>
+			<li>Dimension: 9 "(W) x 9 5/16"(L) x 14 3/8"(H) </li>
+			<li>Quantity: 1 </li>
+			<li>Made in Thailand.</li>
+		</ul>
+
+		<p class="title"><strong>Shipping</strong></p>
+		<ul class="info">
+			<li>All items will be shipped within 3 business days after payment has been received.</li>
+			<li>The package will be shipped from Thailand via standard airmail.</li>
+			<li>The delivery time is estimate 3-5 weeks international shipping.</li>
+			<li>Import duties, taxes, and charges are not included in the item price or shipping cost. These charges are the buyer's responsibility.</li>
+			<li>No return accepted.</li>
+			<li>If you are OK with this please go ahead and purchase and please do not leave us low star rating feedback on the shipping time and shipping cost categories as we have no control over the price and delivery time.</li>
+			<li>Thank you for your understanding we are sure you will love the product.</li>
+		</ul>
+
+		<p class="title"><strong>Payment</strong></p>
+		<ul class="info">
+			<li>We accept PayPal only.</li>
+			<li>The payment should be made within 3 days after auction ends. Please contact us if payment will be late for any reason.</li>
+			<li>If you buy more than one item, please hold on until all bids you will win end, then pay for them together.</li>
+		</ul>
+
+		<p class="title"><strong>Feedback</strong></p>
+		<ul class="info">
+			<li>Feedback is a very important part of ebay. We will leave positive feedback for each customer. We are looking forward to your positive feedback after you received the item.</li>
+			<li>We will leave feedback in return when we receive it. This assures us that your shipment has arrived at its destination.</li>
+			<li>If there are any problems, please email us before posting feedback so we may try to resolve the issue first.</li>
+		</ul>
+
+	</div>
+	</div>
+	<div class="end">
+		<p id="thx"><strong>Thank you for your interest and have a great day.</strong></p>
+	</div>
+</body>
+</html>

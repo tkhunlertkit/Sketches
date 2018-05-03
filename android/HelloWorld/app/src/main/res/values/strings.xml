@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="title_activity_main">My Simple App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="other_text">"I change my Text from Hello world! to this."</string>
+    <string name="edit_message">Enter a Message</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_grade">Student Grade</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="call">Call</string>
+    <string name="title_activity_services_and_broadcast">My Service and Broadcast</string>
+    <string name="title_activity_lp">Landscape Portrait Modes</string>
+    <string name="portrait_message">Portrait Mode !!!!!</string>
+    <string name="landscape_message">Landscape Mode !!!!!</string>
+    <string name="title_activity_fragment_transaction">FragmentTransaction</string>
+
+    <string name="imgdesc">imgdesc</string>
+
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+</resources>

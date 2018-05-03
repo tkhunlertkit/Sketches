@@ -1,0 +1,235 @@
+public class ConstructString {
+
+	private String text = "";
+	private String _product = "";
+	private String _shipping = initShipping();
+	private String _payment = initPayment();
+	private String _images = "";
+	private final String _start = writeStart();
+	private final String _end = writeEnd();
+
+	public ConstructString() {
+
+	}
+
+	private String genImagesHTML(String img) {
+		String[] imgs = img.split("\n");
+		_images = "\t\t<p class=\"title\"><strong>Picture</strong></p>\n";
+		for (int i=0; i<imgs.length; ++i) {
+			_images += "\t\t<img id=\"pic" + i + "\" ";
+			_images += "src=\"" + imgs[i] + "\" ";
+			_images += "alt=\"" + i + "\" ";
+			_images += "onload=\"picture('pic" + i + "')\" />";
+			_images += "\n";
+		}
+		// TODO Auto-generated method stub
+		return _images;
+	}
+
+	private String initPayment() {
+		String Payment = "\t\t\t\t<p class=\"title\"><strong>Payment</strong></p>\n";
+		Payment += "\t\t\t\t<ul class = \"info\">\n";
+		Payment += "\t\t\t\t\t<li>We accept PayPal only.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>The payment should be made within 3 days after auction ends. Please contact us if payment will be late for any reason.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>If you buy more than one item, please hold on until all bids you will win end, then pay for them together.<strong></strong></li>\n";
+		Payment += "\t\t\t\t</ul>\n";
+		Payment += "\t\t\t\t<p class=\"title\"><strong>Feedback</strong></p>\n";
+		Payment += "\t\t\t\t<ul class=\"info\">\n";
+		Payment += "\t\t\t\t\t<li>Feedback is a very important part of ebay. We will leave positive feedback for each customer. We are looking forward to your positive feedback after you received the item.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>We will leave feedback in return when we receive it. This assures us that your shipment has arrived at its destination.<strong></strong></li>\n";
+		Payment += "\t\t\t\t\t<li>If there are any problems, please email us before posting feedback so we may try to resolve the issue first.<strong></strong></li>\n";
+		Payment += "\t\t\t\t</ul>\n";
+		return Payment;
+	}
+
+	private String initShipping() {
+		String Shipping = "\t\t\t\t<p class=\"title\"><strong>Shipping</strong></p>\n";
+		Shipping += "\t\t\t\t<ul class=\"info\">\n";
+		Shipping += "\t\t\t\t\t<li>All items will be shipped within 3 business days after payment has been received. <strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>The package will be shipped from Thailand via standard airmail.<strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>The delivery time is estimate 3-5 weeks international shipping. <strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>No return accepted.<strong></strong></li>\n";
+		Shipping += "\t\t\t\t\t<li>If you are OK with this please go ahead and purchase and please do not leave us low star rating feedback on the shipping time and shipping cost categories as we have no control over the price and delivery time.</li>\n";
+		Shipping += "\t\t\t\t\t<li>Thank you for your understanding we are sure you will love the product.<strong></strong></li>\n";
+		Shipping += "\t\t\t\t</ul>\n";
+		return Shipping;
+	}
+
+	private String writeStart() {
+		String start = "";
+		start = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n";
+		start += "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n";
+		start += "<head>\n";
+		start += "\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n";
+		start += "\t<title>Untitled Document</title>\n";
+		start += "\t<script>\n";
+		start += "\t\tfunction init() {\n";
+		start += "\t\tvar a = document.getElementById('main');\n";
+		start += "\t\tvar s = '900px ' + a.scrollHeight + 'px';\n";
+		start += "\t\ta.style.backgroundSize = s;\n";
+		start += "\t\t}\n";
+		start += "\t\tfunction picture(pic) {\n";
+		start += "\t\t\tvar p = document.getElementById(pic);\n";
+		start += "\t\t\tif (p.offsetHeight > p.offsetWidth) {\n";
+		start += "\t\t\t\tp.style.height = \"550px\";\n";
+		start += "\t\t\t\tp.style.width = \"auto\";\n";
+		start += "\t\t\t}\n";
+		start += "\t\t\telse {\n";
+		start += "\t\t\t\tp.style.width = \"500px\";\n";
+		start += "\t\t\t\tp.style.height = \"auto\";\n";
+		start += "\t\t\t}\n";
+		start += "\t\t}\n";
+		start += "\t</script>\n";
+		start += "\t<style>\n";
+		start += "\t\tbody {\n";
+		start += "\t\t\tbackground-image: url('http://i1348.photobucket.com/albums/p731/tkhunlertkit/E010E230E2D0E1A0E230E390E1B0_zpsf71ad1a0.png');\n";
+		start += "\t\t\tbackground-position: center top;\n";
+		start += "\t\t\tbackground-repeat: no-repeat;\n";
+		start += "\t\t}\n";
+		start += "\t\t#context {\n";
+		start += "\t\t\tmargin-top: 200px;\n";
+		start += "\t\t\twidth: 620px;\n";
+		start += "\t\t\tmargin-left: auto;\n";
+		start += "\t\t\tmargin-right: auto;\n";
+		start += "\t\t\toverflow: auto;\n";
+		start += "\t\t}\n";
+		start += "\t\tp.title {\n";
+		start += "\t\t\ttext-align: center;\n";
+		start += "\t\t\ttext-shadow: 0 0 2em yellow, 0 0 2em yellow;\n";
+		start += "\t\t\tcolor: #E4287C;\n";
+		start += "\t\t\tfont-size: 18px;\n";
+		start += "\t\t}\n";
+		start += "\t\t.info {\n";
+		start += "\t\t\tcolor: #157DEC;\n";
+		start += "\t\t}\n";
+		start += "\t\t#thx {\n";
+		start += "\t\t\ttext-align: center;\n";
+		start += "\t\t\tmargin-top: 30px;\n";
+		start += "\t\t\ttext-shadow: 0 0 2em black, 0 0 2em black;\n";
+		start += "\t\t\tcolor: #595454;\n";
+		start += "\t\t\tfont-size: 18px;\n";
+		start += "\t\t\tmargin-bottom: 250px;\n";
+		start += "\t\t}\n";
+		start += "\t\timg {\n";
+		start += "\t\t\tdisplay: block;\n";
+		start += "\t\t\tmargin-left: auto;\n";
+		start += "\t\t\tmargin-right: auto;\n";
+		start += "\t\t}\n";
+		start += "\t</style>\n";		
+		start += "</head>\n";
+		start += "<body id=\"main\" onload=\"init()\">\n";
+		start += "\t<div id=\"context\">\n";
+		return start;
+	}
+
+	private String writeEnd() {
+		String end = "";
+		end += "\t</div>\n";
+		end += "\t<p id=\"thx\"><strong>Thank you for your interest and have a great day.</strong></p>\n";
+		end += "</body>\n";
+		end += "</html>\n";
+		return end;
+	}
+
+	private String addTitle(String s) {
+		String toAdd = "\t\t<p class=\"title\"><strong>";
+		toAdd += s;
+		toAdd += "</strong></p>\n";
+		return toAdd;
+
+	}
+
+	private String addPoint(String s) {
+		String toAdd = "\t\t\t<li>";
+		toAdd += s;
+		toAdd += "</li>\n";
+		return toAdd;
+	}
+
+	public String genHTMLCode(String s) {
+		String txt = "";
+		String[] line = s.split("\n");
+		boolean ul = false;
+		for (int i = 0; i < line.length; ++i) {
+			String[] elements = line[i].split("\t");
+			// bullet point {
+			if (elements.length >1 && elements[0].isEmpty()) {
+				// bullet with tab indentation
+				if (!ul) {
+					txt += "\t\t<ul class=\"info\">\n";
+					ul = true;
+				}
+				String n = "";
+				for (int j = 1; j < elements.length; ++j) {
+					n += elements[j] + " ";
+				}
+				n = n.substring(0, n.length() - 1);
+				txt += addPoint(n);
+			}
+			else if (elements.length >1 && elements[0].charAt(0) == '\u2022') {
+				// bullet with bullet
+				if (!ul) {
+					txt += "\t\t<ul class=\"info\">\n";
+					ul = true;
+				}
+				String n = "";
+				for (int j = 1; j < elements.length; ++j) {
+					n += elements[j] + " ";
+				}
+				n = n.substring(0, n.length() - 1);
+				txt += addPoint(n);
+			}
+			// Title
+			else if (!elements[0].isEmpty()) {
+				if (ul) {
+					txt += "\t\t</ul>\n\n";
+					ul = false;
+				}
+				txt += addTitle(elements[0]);
+			}
+		}
+		if (ul) {
+			txt += "\t\t</ul>\n\n";
+			ul = false;
+		}
+		txt = replaceDQuote(txt);
+		return txt;
+	}
+
+	private String replaceDQuote(String s) {
+		char[] dq = { '\u201d', '\u201c', '\u201c', '\u0022', '\u275d',
+				'\u275e', '\u201e', '\u201f' };
+
+		for (int i = 0; i < dq.length; ++i) {
+			int loc = s.indexOf(dq[i]);
+			while (loc != -1) {
+				s = s.substring(0, loc) + "\"" + s.substring(loc + 1);
+				loc = s.indexOf(dq[i], loc + 1);
+			}
+		}
+		return s;
+	}
+
+	public String getAdded() {
+		return _images + _product + _shipping + _payment;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public String append(String images, String product, String shipping, String payment) {
+		_images = genImagesHTML(images);
+		_product = genHTMLCode(product);
+		_shipping = genHTMLCode(shipping);
+		_payment = genHTMLCode(payment);
+		text = _start;
+		text += _images;
+		text += _product;
+		text += _shipping;
+		text += _payment;
+		text += _end;
+		return text;
+	}
+
+}

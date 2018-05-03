@@ -1,0 +1,143 @@
+!SESSION 2014-12-13 10:38:51.121 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/MSDK/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/MSDK/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-13 10:39:30.660
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-12-13 10:44:17.910
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2014-12-13 10:44:17.910
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-12-13 10:44:17.910
+!MESSAGE "Eclipse Git Team Provider" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-12-13 10:44:17.910
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-12-13 10:44:17.910
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:17.910
+!MESSAGE Software being installed: Java implementation of Git - optional Http support using Apache httpclient 3.5.2.201411120430-r (org.eclipse.jgit.http.apache.feature.group 3.5.2.201411120430-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:17.910
+!MESSAGE Missing requirement: Apache HttpComponents HttpClient OSGi bundle 4.1.3.v201209201135 (org.apache.httpcomponents.httpclient 4.1.3.v201209201135) requires 'package org.apache.commons.codec.binary 1.4.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-12-13 10:44:17.910
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:17.910
+!MESSAGE From: Java implementation of Git - optional Http support using Apache httpclient 3.5.2.201411120430-r (org.eclipse.jgit.http.apache.feature.group 3.5.2.201411120430-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:17.910
+!MESSAGE To: org.apache.httpcomponents.httpclient [4.1.3.v201209201135]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2014-12-13 10:44:18.055
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2014-12-13 10:44:18.055
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-12-13 10:44:18.055
+!MESSAGE "Eclipse Git Team Provider" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2014-12-13 10:44:18.055
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2014-12-13 10:44:18.055
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:18.055
+!MESSAGE Software being installed: Java implementation of Git - optional Http support using Apache httpclient 3.5.2.201411120430-r (org.eclipse.jgit.http.apache.feature.group 3.5.2.201411120430-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:18.055
+!MESSAGE Missing requirement: Apache HttpComponents HttpClient OSGi bundle 4.1.3.v201209201135 (org.apache.httpcomponents.httpclient 4.1.3.v201209201135) requires 'package org.apache.commons.codec.binary 1.4.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2014-12-13 10:44:18.055
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:18.055
+!MESSAGE From: Java implementation of Git - optional Http support using Apache httpclient 3.5.2.201411120430-r (org.eclipse.jgit.http.apache.feature.group 3.5.2.201411120430-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2014-12-13 10:44:18.056
+!MESSAGE To: org.apache.httpcomponents.httpclient [4.1.3.v201209201135]
+
+!ENTRY org.eclipse.ui 2 2 2014-12-13 10:50:13.911
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2014-12-13 10:58:55.319 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-13 10:59:56.655
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 10:59:58.538
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 10:59:58.539
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 10:59:58.539
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2014-12-13 10:59:58.540
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+!SESSION 2015-01-13 17:48:54.503 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-01-13 17:49:20.752
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2015-01-13 17:49:23.642
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2015-01-13 17:49:23.643
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.ui 4 4 2015-01-13 17:49:23.644
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2015-01-13 17:49:23.644
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+!SESSION 2015-01-20 17:49:32.988 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -data /Users/MSDK/Work/My App -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-01-20 17:49:41.667
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2015-01-20 17:49:43.151
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2015-01-20 17:49:43.152
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.ui 4 4 2015-01-20 17:49:43.152
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2015-01-20 17:49:43.152
+!MESSAGE Unable to find Action Set: adt.actionSet.lint
+!SESSION 2015-01-27 01:32:15.185 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/MSDK/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-01-27 01:33:05.147
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2015-01-27 01:33:10.014
+!MESSAGE Unable to find Action Set: adt.actionSet.wizards
+
+!ENTRY org.eclipse.ui 4 4 2015-01-27 01:33:10.015
+!MESSAGE Unable to find Action Set: adt.actionSet.refactorings
+
+!ENTRY org.eclipse.ui 4 4 2015-01-27 01:33:10.015
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.ui 4 4 2015-01-27 01:33:10.016
+!MESSAGE Unable to find Action Set: adt.actionSet.lint

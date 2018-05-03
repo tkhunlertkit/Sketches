@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{6861679B-3509-4604-A936-DE9517B2C1FD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="First_Project/first.master.cs">
+    <Files>
+      <File FileName="First_Project/first.master" Line="1" Column="1" />
+      <File FileName="First_Project/first.master.cs" Line="1" Column="1" />
+      <File FileName="First_Project/first.master.designer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.First__Project.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.First__Project PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+</Properties>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Untitled Document</title>
+	<script type="text/javascript">
+		function init() {
+			reSize();
+			setPara();
+		}
+		function reSize() {
+			var img = document.getElementById('back');
+			img.style.position = 'absolute';
+			img.style.width = '760px';
+			img.style.height = 'auto';
+			img.style.zIndex = '-1';
+		}
+		function setPara() {
+			var t = document.getElementById('context');
+			t.style.marginTop = '160px';
+			t.style.width=532+'px';
+			t.style.marginLeft = 114 + 'px';
+			t = t.getElementsByClassName('title');
+			for (var i = 0; i < t.length; i++) {
+				var tt = t[i];
+				tt.style.textAlign = 'center';
+				tt.style.textShadow = '0 0 2em yellow, 0 0 2em yellow';
+				tt.style.color='#E4287C';
+				tt.style.fontSize='18px';
+			}
+			t = document.getElementById('context').getElementsByClassName('info');
+			for (var i=0; i<t.length; i++) {
+				var tt = t[i];
+				tt.style.color= '#157DEC';
+			}
+			t = document.getElementById('thx');
+			t.style.textAlign = 'center';
+			t.style.marginTop = '20px';
+			t.style.marginBottom='230px';
+			t.style.textShadow = '0 0 2em black, 0 0 2em black';
+			t.style.color = '#595454';
+			t.style.fontSize = '18px';
+		}
+	</script>
+</head>
+<body id="main" onload="init()">
+	<table style="height:300px;">
+		<tr><td></td></tr>
+		<tr> <td>
+			<div>
+				<img id="back" src="http://i1348.photobucket.com/albums/p731/tkhunlertkit/E010E230E2D0E1A0E230E390E1B0_zpsf71ad1a0.png" alt="border" />
+			</div>
+			<div id="context">
+				<p class="title"><strong>Shipping</strong></p>
+				<ul class="info">
+					<li>All items will be shipped within 3 business days after payment has been received.</li>
+					<li>The package will be shipped from Thailand via standard airmail.</li>
+					<li>The delivery time is estimate 3-5 weeks international shipping.</li>
+					<li>Import duties, taxes, and charges are not included in the item price or shipping cost. These charges are the buyer's responsibility.</li>
+					<li>No return accepted.</li>
+					<li>If you are OK with this please go ahead and purchase and please do not leave us low star rating feedback on the shipping time and shipping cost categories as we have no control over the price and delivery time.</li>
+					<li>Thank you for your understanding we are sure you will love the product.</li>
+				</ul>
+				<p class="title"><strong>Payment</strong></p>
+				<ul class="info">
+					<li>We accept PayPal only.</li>
+					<li>The payment should be made within 3 days after auction ends. Please contact us if payment will be late for any reason.</li>
+					<li>If you buy more than one item, please hold on until all bids you will win end, then pay for them together.</li>
+				</ul>
+				<p class="title"><strong>Feedback</strong></p>
+				<ul class="info">
+					<li>Feedback is a very important part of ebay. We will leave positive feedback for each customer. We are looking forward to your positive feedback after you received the item.</li>
+					<li>We will leave feedback in return when we receive it. This assures us that your shipment has arrived at its destination.</li>
+					<li>If there are any problems, please email us before posting feedback so we may try to resolve the issue first.</li>
+				</ul>
+				<p id="thx"><strong>Thank you for your interest and have a great day.</strong></p>
+			</div>
+		</td> </tr>
+	</table>
+</body>
+</html>

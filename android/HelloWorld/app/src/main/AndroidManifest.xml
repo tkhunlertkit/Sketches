@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.msdk.helloworld">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".MyService" />
+
+        <receiver android:name=".MyReceiver">
+            <intent-filter>
+                <action android:name="com.example.msdk.CUSTOM_INTNET" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.msdk.helloworld.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ServicesAndBroadcast"
+            android:label="@string/title_activity_services_and_broadcast"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.msdk.helloworld.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LPActivity"
+            android:label="@string/title_activity_lp"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.CustomDialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.msdk.helloworld.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FragmentTranslation"
+            android:label="@string/title_activity_fragment_transaction"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.CustomDialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.msdk.helloworld.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

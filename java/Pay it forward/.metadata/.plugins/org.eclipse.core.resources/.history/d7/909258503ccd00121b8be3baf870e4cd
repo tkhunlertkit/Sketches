@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class PayItForward {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter depth level: ");
+		int d = s.nextInt();
+		int sum = 0;
+		for (int i=1; i<=d; ++i) {
+			sum += Math.pow(3,i);
+		}
+		
+		System.out.println("Number people got helped: " + sum);
+		System.out.println(Math.ceil(Math.log(6000000000.0)/Math.log(3)));
+		s.close();
+	}
+
+}
